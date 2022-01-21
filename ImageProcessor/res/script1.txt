@@ -1,0 +1,16 @@
+load image flower.ppm
+load image flower_sepia.ppm
+set 2
+apply greyscale
+set 1
+apply mosaic 500
+save state script/flowers1_layers
+toggle 2
+export script/flower1_mosaic.ppm
+toggle 2
+save image 2 script/flower1_sepiaNgreyscale.ppm
+apply sharpen 
+save image current script/flower1_mosaicNsharpen.jpg
+load state script/flowers1_layers.txt
+apply blur
+exit

@@ -1,0 +1,22 @@
+load state script/flowers1_layers.txt
+apply blur
+set 2
+toggle 1
+export script/flowers2.jpeg
+toggle 1
+apply mosaic 1000
+save state script/flowers2_updatedLayers
+load image flower_greyscale.ppm
+set 3
+apply sepia
+set 2
+apply sharpen
+apply downscale 90 60
+set 1
+apply sepia
+save image current script/flower2_blurredNsepia.jpg
+save image 3 script/flower2_greyscale_downscale.png
+export script/newFlower2.png
+exit
+
+
