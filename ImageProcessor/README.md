@@ -1,5 +1,3 @@
-# CS3500
-
 # Program Breakdown of Image Processing
 
 ***
