@@ -67,7 +67,7 @@ Commands:
 
 ---
 
-### Class Mosaic implements IModifier (EXTRACREDIT)
+### Class Mosaic implements IModifier
 
 The Mosaic class has one constructor which takes in a number of seeds. The mosaic class uses the
 k-means clustering algorithm in order to create an image that is the mosaic version of the original.
@@ -85,7 +85,7 @@ Methods:
 
 ---
 
-### Class DownScale implements IModifier (EXTRACREDIT)
+### Class DownScale implements IModifier 
 
 This class is represents a filter that modifies an image to be smaller than what it currently is
 based on an input height and width by the user. It has a constructor that takes in these two
@@ -98,8 +98,7 @@ Methods:
   IImage if the input width and height are less than the current width and height.
 
 ---
-EXTRACREDIT
-
+Final Additions
 1. DownScale - We made this into a class that implements IModifier. This in itself worked but there
    was one problem, we were unable to update the width and height of the IImage and ILayer to match
    the new size. To fix this problem, we added a method to the IImage interface changeCanvasSize
